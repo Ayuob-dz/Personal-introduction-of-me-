@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ayuob Zalani | خدمات إلكترونية موثوقة ووساطة آمنة</title>
+    <meta name="description" content="Ayuob Zalani – بيع وشراء حسابات الألعاب، شحن ألعاب، وساطة لضمان عدم النصب، خدمات ومنتجات إلكترونية متنوعة. السرعة والأمان وثقة العميل شعارنا.">
+    <meta name="keywords" content="Ayuob Zalani, أيوب زعلاني, بيع حسابات العاب, شحن العاب, وساطة, خدمات إلكترونية, ضمان عدم النصب">
+    <meta name="author" content="Ayuob Zalani">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://your-username.github.io/your-repo-name/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient-start: #f5f7fc;
+            --bg-gradient-end: #eef2f7;
+            --container-bg: rgba(255, 255, 255, 0.95);
+            --text-color: #1a2a3f;
+            --card-bg: #ffffff;
+            --card-border: #e0e7ed;
+            --slogan-bg: #eef3fc;
+            --slogan-border: #1b4a6e;
+            --footer-bg: #0f2b3d;
+            --footer-text: #bdd3e8;
+            --btn-bg: #f0f2f5;
+            --btn-color: #1a2a3f;
+            --btn-border: #cddae9;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-gradient-start: #121826;
+                --bg-gradient-end: #1a1f2c;
+                --container-bg: rgba(30, 35, 48, 0.95);
+                --text-color: #eef2ff;
+                --card-bg: #262c3a;
+                --card-border: #3a4155;
+                --slogan-bg: #1e2a3a;
+                --slogan-border: #4c9aff;
+                --footer-bg: #0b0f17;
+                --footer-text: #9aaec9;
+                --btn-bg: #2d3445;
+                --btn-color: #eef2ff;
+                --btn-border: #4a526b;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Tahoma', 'Cairo', sans-serif;
+            background: linear-gradient(145deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            transition: background 0.3s, color 0.2s;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1b4a6e, #4c9aff);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            backdrop-filter: blur(2px);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f2b3d, #1b4a6e);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .image-placeholder {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .site-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .site-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* أيقونات التواصل أولاً */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            padding: 1.2rem 2.2rem;
+            border-radius: 3.5rem;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.4rem;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            background: var(--btn-bg);
+            color: var(--btn-color);
+            border: 1px solid var(--btn-border);
+            min-width: 250px;
+            box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-btn i {
+            font-size: 2.5rem;
+            transition: transform 0.2s;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 18px 28px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btn:hover i {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .btn-facebook {
+            background: #1877f2;
+            color: white;
+            border: none;
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+            border: none;
+        }
+        .btn-telegram {
+            background: #26a5e4;
+            color: white;
+            border: none;
+        }
+
+        /* الخدمات */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 1.5rem;
+            padding: 1.8rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--card-border);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease, background 0.3s;
+        }
+
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card h3 {
+            font-size: 1.7rem;
+            color: #4c9aff;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 1.05rem;
+        }
+
+        .slogan {
+            background: var(--slogan-bg);
+            padding: 1.8rem;
+            text-align: center;
+            border-radius: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-right: 6px solid var(--slogan-border);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
+        }
+
+        .slogan.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .trust-badge {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0 1rem;
+            text-align: center;
+        }
+        .trust-item {
+            background: rgba(76, 154, 255, 0.1);
+            padding: 0.7rem 1.2rem;
+            border-radius: 3rem;
+            font-weight: bold;
+            font-size: 1rem;
+            backdrop-filter: blur(4px);
+        }
+
+        footer {
+            background: var(--footer-bg);
+            color: var(--footer-text);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 650px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            .social-btn {
+                padding: 1rem 1.6rem;
+                font-size: 1.2rem;
+                min-width: 200px;
+            }
+            .social-btn i {
+                font-size: 2rem;
+            }
+            .trust-item {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="container">
+    <div class="hero">
+        <h1>Ayuob Zalani</h1>
+        <p>خدمات إلكترونية بثقة | وساطة آمنة | سرعة فائقة</p>
+    </div>
+
+    <div class="content">
+        <div class="image-placeholder fade-up">
+            <img class="site-image" src="site-image.jpg" alt="Ayuob Zalani" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400?text=Ayuob+Zalani';">
+        </div>
+
+        <!-- أيقونات التواصل أولاً -->
+        <div class="social-links">
+            <a class="social-btn btn-facebook" href="https://www.facebook.com/profile.php?id=61587261506920" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i> فيسبوك
+            </a>
+            <a class="social-btn btn-whatsapp" href="https://wa.me/qr/XCLI6ASDCUFTB1" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a class="social-btn btn-telegram" href="https://t.me/AyuobZalani" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram-plane"></i> تليجرام
+            </a>
+        </div>
+
+        <!-- الخدمات (مع إضافة شحن الألعاب) -->
+        <div class="services">
+            <div class="service-card">
+                <h3>🎮 بيع وشراء حسابات الألعاب</h3>
+                <p>أكبر تشكيلة من حسابات الألعاب النادرة والمميزة. نضمن لك أفضل الأسعار وأسرع تنفيذ. تعامل آمن 100%.</p>
+            </div>
+            <div class="service-card">
+                <h3>💰 شحن ألعاب ورصيد</h3>
+                <p>شحن فوري لجميع الألعاب (ببجي، فري فاير، كود، وغيرها) بأفضل الأسعار. توصيل خلال دقائق وبأمان تام.</p>
+            </div>
+            <div class="service-card">
+                <h3>🛡️ وساطة احترافية (ضمان عدم النصب)</h3>
+                <p>نحن الوسيط الموثوق بين البائع والمشتري. نضمن حق الطرفين ونحميك من أي احتيال. عمولات شفافة وأمان تام.</p>
+            </div>
+            <div class="service-card">
+                <h3>💡 خدمات ومنتجات إلكترونية متكاملة</h3>
+                <p>حلول رقمية مبتكرة: برمجيات، حسابات مميزة، خدمات تقنية واحترافية. نقدمها بجودة عالية وسرعة خيالية.</p>
+            </div>
+        </div>
+
+        <div class="slogan">
+            ⚡ السرعة · الأمان · ثقة العميل ⚡<br>
+            <span style="font-size: 1rem;">أكثر من 500 عميل راضٍ | ضمان استعادة الحقوق | دعم 24/7</span>
+        </div>
+
+        <div class="trust-badge">
+            <div class="trust-item">✓ ضمامن حقك</div>
+            <div class="trust-item">✓ استرجاع الحقوق</div>
+            <div class="trust-item">✓ سرعة فائقة بالتنفيذ</div>
+            <div class="trust-item">✓ دعم مستمر</div>
+        </div> 
+    </div>
+
+    <footer>
+        © 2026 Ayuob Zalani - جميع الحقوق محفوظة | خدمات إلكترونية بثقة
+    </footer>
+</div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('progressBar').style.width = scrolled + '%';
+    });
+
+    const revealElements = document.querySelectorAll('.service-card, .slogan, .fade-up');
+    function checkVisibility() {
+        const windowHeight = window.innerHeight;
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < windowHeight - 100) {
+                el.classList.add('visible');
+            }
+        });
+    }
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+    checkVisibility();
+</script>
+</body>
+</html>
