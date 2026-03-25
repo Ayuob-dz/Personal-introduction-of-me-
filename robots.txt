@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ayuob-dz.github.io/Personal-introduction-of-me-/sitemap.xml
